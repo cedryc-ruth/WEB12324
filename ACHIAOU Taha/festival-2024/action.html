@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catégorie action - Festival</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/ios/50/camcorder-pro.png">
+    <link rel="stylesheet" href="./stylesheet/css/bootstrap.css">
+    <link rel="stylesheet" href="./stylesheet/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./stylesheet/css/main.css">
+
+    <script src="https://kit.fontawesome.com/07a9783f4a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <header id="header">
+            <a href="accueil.html" class="logo">Festival</a>
+        </header>
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="programmation.html">Programmation</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="pageTickets.html">Tickets</a></li>
+                <li><a href="jury.html">Jurys</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <div class="container mt-5">
+                <!-- data-panel -->
+                <div class="row" id="data-panel">
+                    <div class="col-sm-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./img/films/theCovenant.jpg" alt="Card image cap">
+                            <div class="card-body movie-item-body">
+                                <h3 class="card-title">The Covenant</h3>
+                            </div>
+                            <!--More button-->
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-show-movie" data-toggle="modal"
+                                    data-target="#showMovieModal" data-id="movie01">Plus d'info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./img/films/Fury.jpg" alt="Card image cap">
+                            <div class="card-body movie-item-body">
+                                <h3 class="card-title">Fury</h3>
+                            </div>
+                            <!--More button-->
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-show-movie" data-toggle="modal"
+                                    data-target="#showMovieModal" data-id="movie03">Plus d'info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./img/films/pacificRim.jpg" alt="Card image cap">
+                            <div class="card-body movie-item-body">
+                                <h3 class="card-title">Pacific Rim</h3>
+                            </div>
+                            <!--More button-->
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-show-movie" data-toggle="modal"
+                                    data-target="#showMovieModal" data-id="movie02">Plus d'info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./img/films/edgeOfTomorrow.jpg" alt="Card image cap">
+                            <div class="card-body movie-item-body">
+                                <h3 class="card-title">Edge Of Tomorrow</h3>
+                            </div>
+                            <!--More button-->
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-show-movie" data-toggle="modal"
+                                    data-target="#showMovieModal" data-id="movie06">Plus d'info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./img/films/taken.jpg" alt="Card image cap">
+                            <div class="card-body movie-item-body">
+                                <h3 class="card-title">Taken</h3>
+                            </div>
+                            <!--More button-->
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-show-movie" data-toggle="modal"
+                                    data-target="#showMovieModal" data-id="movie04">Plus d'info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./img/films/equalizer.jpg" alt="Card image cap">
+                            <div class="card-body movie-item-body">
+                                <h3 class="card-title">The Equalizer</h3>
+                            </div>
+                            <!--More button-->
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-show-movie" data-toggle="modal"
+                                    data-target="#showMovieModal" data-id="movie05">Plus d'info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="showMovieModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="show-movie-title"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" id="show-movie-body">
+                                    <div class="row">
+                                        <div class="col-sm-8" id="show-movie-image">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><em id="show-movie-date"></em></p>
+                                            <p id="show-movie-description"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <section>
+            <div>
+                <div>
+                    <h2>Liens Utile</h2>
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="pageTickets.html">Tickets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="split contact">
+            <section class="alt">
+                <h3>Adresse</h3>
+                <p>Avenue de l’Astronomie, 19<br>
+                    1210 Bruxelles</p>
+            </section>
+            <section>
+                <h3>Telephone</h3>
+                <p><a href="#">02 777 10 10</a></p>
+            </section>
+            <section>
+                <h3>E-mail</h3>
+                <p><a href="#">taha.achiaou@hotmail.com</a></p>
+            </section>
+        </section>
+    </footer>
+    <div id="copyright">
+        <ul>
+            <li>&copy; Untitled</li>
+            <li><a href="./pdf/mentionLegal.pdf" targeT="_blank">Mention legal</a></li>
+            <li>Design from : <a href="https://github.com/taha2-4/festival-2024" target="_blank">THE BEST</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

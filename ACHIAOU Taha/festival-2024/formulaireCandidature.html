@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accueil - Festival</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="./img/icons8-video-camera-16.png">
+    <link rel="stylesheet" href="./stylesheet/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./stylesheet/css/main.css">
+
+    <script src="https://kit.fontawesome.com/07a9783f4a.js" crossorigin="anonymous"></script>
+    <noscript>
+        <link rel="stylesheet" href="./stylesheet/css/noscript.css">
+    </noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+    <script>
+        function verify() {
+            var value = document.forms[0].item.value; // or replace document.forms[0].item by document.getElementById('name')
+            var objective = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+            if (objective != value) {
+                document.forms[0].item.style.color = "#F33A6A";
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <style>
+        .breadcrumb {
+            padding: 0 .5rem;
+        }
+
+        .breadcrumb ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .breadcrumb li:not(:last-child)::after {
+            display: inline-block;
+            margin: 0 .25rem;
+            content: "\2660";
+        }
+
+
+        .caveat {
+            font-family: "Caveat", cursive;
+            font-weight: 500;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <header id="header">
+            <img src="https://img.icons8.com/ios/50/camcorder-pro.png" alt="camcorder-pro">
+        </header>
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="accueil.html">Accueil</a></li>
+                <li><a href="programmation.html">Programmation</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="pageTickets.html">Tickets</a></li>
+                <li><a href="jury.html">Jurys</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="formulaireCandidature.html"> Candidature</a></li>
+                <li><a href="comparatif.html"> comparatif</a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+            <section class="post">
+                <header class="major">
+                    <h1 class="caveat">Formulaire de Candidature</h1>
+                </header>
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><span aria-current="page">Candidature</span></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <p>Vous souhaitez participer à la prochaine édition du festival ? Inscrivez-vous en remplissant ce
+                        formulaire sans tarder.</p>
+                </div>
+
+                <form method="post" action="/apply.php" onSubmit="verify();">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="art">Artiste/Group</label>
+                            <input type="text" name="art" id="art" required="required">
+                        </div>
+                        <div class="field">
+                            <label for="po">Pays d'origine </label>
+                            <select id="po" required="required">
+                                <option value>Veuillez Choisir</option>
+                                <option value="Belgique">Belgique</option>
+                                <option value="France">France</option>
+                                <option value="Allemagne">Allemagne</option>
+                                <option value="Espagne">Espagne</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="name">Nom et Prénom (personne de contact)</label>
+                            <input type="text" name="name" id="name" required="required">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email (personne de contact)</label>
+                            <input type="email" name="email" id="email" required="required"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </div>
+                        <div class="field">
+                            <label for="tel">Télephone (personne de contact)</label>
+                            <input type="text" name="tel" id="tel" required="required">
+                        </div>
+                        <div class="field">
+                            <label for="nbr">Nombre de personnes dans le group</label>
+                            <input type="text" name="nbr" id="nbr" required="required">
+                        </div>
+                        <div class="field">
+                            <label for="ytb">Chaîne YouTube</label>
+                            <input type="url" name="ytb" id="ytb" required="required">
+                        </div>
+                        <div class="field">
+                            <label>Genre</label>
+                            <input type="checkbox" id="Soul" name="Soul">
+                            <label class="bbold" for="Soul"> Soul </label>
+                            <input type="checkbox" id="Pop_Music" name="Pop Music">
+                            <label for="Pop_Music"> Pop Music </label>
+                            <input type="checkbox" name="Rock Music" id="Rock_Music">
+                            <label for="Rock_Music"> Rock Music </label>
+                            <input type="checkbox" name="Dance" id="Dance"> <label for="Dance"> Dance </label>
+                            <input type="checkbox" name="Reggae" id="Reggae">
+                            <label for="Reggae"> Reggae </label>
+                        </div>
+                        <div class="field">
+                            <label>A quel moment de la semaine souhaitez vous être programmé lors du festival?</label>
+                            <input type="radio" id="L&M" name="jour">
+                            <label for="L&M"> Lundi à Mercredi </label>
+                            <input type="radio" id="J&V" name="jour">
+                            <label for="J&V"> Jeudi à Vendredi </label>
+                            <input type="radio" id="S&D" name="jour">
+                            <label for="S&D"> Samedi à Dimanche </label>
+                        </div>
+                        <div class="field">
+                            <label for="message">Biographie</label>
+                            <textarea name="message" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="field">
+                            <input type="checkbox" id="termetc" name="termetc" required="required">
+                            <label for="termetc"> J'accepte les conditions générales et politique de confidentialité des
+                                données. </label>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Envoyer" id="submit"></li>
+                    </ul>
+                </form>
+            </section>
+        </div>
+
+
+        <footer id="footer">
+            <section>
+                <div>
+                    <div>
+                        <h2>Liens Utile</h2>
+                        <ul>
+                            <li><a href="accueil.html">Accueil</a></li>
+                            <li><a href="agenda.html">Agenda</a></li>
+                            <li><a href="pageTickets.html">Tickets</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Adresse</h3>
+                    <p>Avenue de l’Astronomie, 19<br>
+                        1210 Bruxelles</p>
+                </section>
+                <section>
+                    <h3>Telephone</h3>
+                    <p><a href="#">02 777 10 10</a></p>
+                </section>
+                <section>
+                    <h3>E-mail</h3>
+                    <p><a href="#">taha.achiaou@hotmail.com</a></p>
+                </section>
+            </section>
+        </footer>
+        <div id="copyright">
+            <ul>
+                <li>&copy; Untitled</li>
+                <li><a href="./pdf/mentionLegal.pdf" targeT="_blank">Mention legal</a></li>
+                <li>Design from : <a href="https://github.com/taha2-4/festival-2024" target="_blank">THE
+                        BEST</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

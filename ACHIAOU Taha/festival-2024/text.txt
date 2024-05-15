@@ -1,0 +1,36 @@
+Action (t)
+-The Covenant
+-Fury
+-Pacific Rim
+-Edge Of Tomorrow
+-Taken
+-The Equalizer
+
+Aventure (s)
+-Seul au monde
+-Voyage au centre de la Terre
+-Uncharted
+-Hunger Games
+
+Comedie (b)
+-Intouchables
+-Red Notice
+-Agents presque secrets
+-Braquage à l'ancienne
+
+Science-fiction (b)
+-Le Seigneur des anneaux 3 - Le retour du roi
+-Inception
+-Lucy
+-Time Out
+-Avatar
+-Interstellar
+-I am Legend
+
+Kids (n)
+-Le roi lion
+-La reine des neiges
+-Cars
+-Astro Boy
+
+
